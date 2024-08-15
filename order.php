@@ -3,15 +3,31 @@
  ?>
 <style>
 
- .item,h2{
+ h2{
     text-align:center;
  }
 
  </style>
-        <h2>Thank you for purchasing</h2>
+        
 
         <!-- Item 1 -->
-        <?php 
+       
+        <div class="category-area">
+            <div class="container">
+            <div class="text-center">
+                <h2>Thank you for purchasing</h2>
+            </div>
+    
+            <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 ">
+                        <div class="category-listing mb-50">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-8 ">
+                        <div class="new-arrival new-arrival2">
+                            <div class="row">
+                            <?php 
             include "connection.php";
             $username=$_SESSION['user'];
             $user_id=$username['uid'];
@@ -26,25 +42,33 @@
                 $rs2= mysqli_query($con,$q2);
                 while($row2=mysqli_fetch_array($rs2)){
         ?>
-        <div class="item">
-            <img src="<?php echo $row2['img1'] ?>" alt="Item Image">
-            <div class="item-details">
-                <div class="item-name">product:  <?php echo $row2['pname'] ?></div>
+                                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                                    <div class="single-new-arrival mb-50 text-center">
+                                        <div class="popular-img">
+                                            <img src="<?php print $row2['img1'];?>" alt="" width="450px" height="300px">
+                                        </div>
+                                        <div class="popular-caption">
+                                        <div class="item-name">product:  <?php echo $row2['pname'] ?></div>
                 <div class="item-price">Price: <?php echo $row2['price'] ?>/-</div>
                 <div class="item-name">Purchased by: <?php echo $username['name'] ?></div>
-            </div>
-            <div style="clear:both;"></div>
-        </div>
-        <?php
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
                 $total=$total+$row2['price'];
                 }
             } 
         ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+       
         <!-- Total -->
          <br>
         <div>
         <h2> Total: <?php echo $total ?>/-</h2>
-        <button class="btn btn-download" onclick="window.print()">Download Receipt</button>
         </div>
     <!-- Bootstrap JS and dependencies (optional, if needed) -->
     

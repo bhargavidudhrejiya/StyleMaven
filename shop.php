@@ -4,13 +4,12 @@
     <main>
         <div class="category-area">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-7 col-md-10">
-                        <div class="section-tittle mb-50">
-                            <h3>Shop with us</h3>
-                        </div>
+               
+                    <div class="text-center">
+                    <h2>Shop with us</h2>
                     </div>
-                </div>
+                    
+
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6 ">
                         <div class="category-listing mb-50">
