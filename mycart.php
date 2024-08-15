@@ -55,6 +55,7 @@
                            <div class="section-tittle text-center mb-65">
                               <a href="shop.php" class="btn btn-primary">shop</a>
                               <a href="order.php" class="btn btn-primary">Order Now</a><br><br>
+                           
                            </div>
                         </div>
                      </div>
