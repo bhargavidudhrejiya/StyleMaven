@@ -47,6 +47,7 @@
 
 <!-- Popular Items End -->
 <!--? Services Area Start -->
+
 <div class="categories-area section-padding40 gray-bg">
     <div class="container-fluid">
         <div class="row">

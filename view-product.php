@@ -83,7 +83,7 @@ tr:nth-child(even){background-color: #f2f2f2}
          </div>
       </div>
       <script src="login_java.js"></script>
-   </body>
+</body>
 </html>
 <div>
 </div>
